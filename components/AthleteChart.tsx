@@ -16,7 +16,7 @@ ChartJS.register(LineElement, PointElement, CategoryScale, LinearScale, Tooltip,
 interface Athlete {
   id: string;
   name: string;
-  metrics: { id: string; date: string; metricType: string; value: number }[];
+  metrics: { id: string; date: Date; metricType: string; value: number }[];
 }
 
 export function AthleteChart({ athletes }: { athletes: Athlete[] }) {
